@@ -1,0 +1,50 @@
+<!doctype Html>
+<html lang="en-US">
+				<!--head data, this is hidden from the user and helps set up the page -->
+	<head>
+		<title>Mof Flowchart</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+		<link rel="stylesheet" href="css/normalize.css">       <!--this helps 0 all margins and paddings across different browsers-->
+		<link rel="stylesheet" href="css/stylesv2.css">			<!--link to external stylesheet-->
+	</head>	
+	
+				<!--wraps the entire page in a wrapper for proper margin and flexbox settings -->
+	<div class="wrapper">
+		<body>
+			<header class="header">
+				<!--Header data, image, main heading -->
+				<img class="headimage" src="images/round_rainbow.jpg" alt="banner">
+				<p><h1>Failure Investigation tool</h1></p>
+				
+				<!--question is added to this div via the jscript -->
+			<div class="question">
+				<p id="question"><strong>Delta investigation mode of failure</strong>
+				<br>Note:<br>Do not assess module without a fault report</p>	
+			</div>
+			
+			<div class="buttonspace">
+				<!--Buttons are added here throught jscript -->
+			</div>
+			
+			<div class="photos">
+				<!--<p>photos go here through jscript</p>-->
+				<img id="delta-photo" src="images/placeimg_640_480_tech.jpg" alt="delta photo">
+			</div>
+			
+			<div class="failure">
+				<!-- <p>failure causes go here through jscript</p> -->	
+			</div>	
+	
+			
+				<!--footer information, document title and revision -->		
+			<footer class="footer">
+				<h3>Reference Document: 17-A.324/ JM V2.0</h3>
+			</footer>
+				<!--links to the jscript and jquery files -->
+			<script src ="javascript/jquery-3.3.1.js"></script>
+			<script src="javascript/script_v3.js"></script>
+			
+		</body>
+	</div>	
+</html>

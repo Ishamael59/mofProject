@@ -1,0 +1,130 @@
+/****Base styles****/
+
+/*These styles are applied to the whole web page*/
+* {
+	box-sizing:border-box;    /*This makes the page easier to scale because it combines the padding and margin into the base value*/
+}
+.wrapper {
+	display:flex;			/*parent container for flexbox layout*/
+	line-height:1.1;		
+	flex-direction:column;
+	text-align:center;
+	min-height:100vh;
+	background:#026cb6;
+}
+.header {
+	background-color:#026cb6;
+	color:white;
+	padding:0px;
+	margin-bottom:-1em;
+}
+.question {
+	background:orange;
+	font-size:1.2em;
+	padding-top:2px;
+	padding-bottom:2px;
+	
+}
+.photos {
+	background-color:#026cb6;
+}
+ .failure { 
+	background:red;
+	font-size:1.2em;
+	margin-top:1em;
+	
+ } 
+.buttonspace {
+	margin-bottom:1em;
+}
+.footer {
+	background-color:#026cb6;
+	color:white;
+	padding-top:13em;
+}
+.headimage {							/*helps to round out the top image*/
+	border-radius:50%;	
+}
+.button {   
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari specific settings */
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.button-start,							
+.button-yes {
+	background:green;
+	color:white;
+}
+.button-start:hover,					/*styes displayed when the user hovers the pointer over the target*/
+.button-yes:hover {
+    background-color: #4CAF50;
+    color:white;
+}
+.button-start {
+	visibility:show;
+}
+.button-no {
+	background:red;
+    color:white;
+}
+.button-no:hover {
+	background:#f44336;
+	color:white;
+}
+.button-reset {
+	background:red;
+    color:white;
+}
+.button-reset:hover {
+	background:#f44336;
+	color:white;
+}
+#delta-photo {
+	width:300px;
+	height:auto;
+	margin-bottom:-.2em;
+	box-shadow: 1px 3px 20px 5px #888882;
+	border:1px solid black;
+}
+
+/**Responsive styles**/
+/*		These styles are applied when the viewport is larger than 600px		     */
+
+@media(min-width:600px) {
+	#delta-photo {
+	width:500px;
+	margin-top:2em;
+}
+.header {
+	font-size:1.6em;
+}
+.question {
+	background:orange;
+	font-size:1.2em;	
+}
+.footer {
+	padding-top:5.5em;
+}
+.button {
+	width:12em;
+	border:1px solid black;
+	box-shadow: 1px 1px 20px 5px #001738;
+	margin-bottom:1em;
+}
+.button-no {
+	margin-left:3em;
+}
+
+.buttonspace {
+	display:flex;
+	justify-content:center;
+	margin-top:1em;
+	margin-bottom:0;
+}
+
+}
