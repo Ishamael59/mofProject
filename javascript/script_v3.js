@@ -74,6 +74,8 @@ const $noButton = $('<div class="button button-no">No</div>');
 const $question = $('.question');
 const $failure = $('.failure');
 const $resetButton = $('<div class="button button-reset">Reset</div> ');
+const $picture = $('.photos');
+const $foot = $('.footer');
 
 //This is the function that will display the failure and stop the app.
 function failureIs(x){
@@ -551,6 +553,8 @@ function question37() {
 	$startButton.remove();							// removes the start button from the dom 
 	$('.buttonspace').append($yesButton);			//adds the yes button to the dom
 	$('.buttonspace').append($noButton);			//adds the no button to the dom
+	$picture.html('');
+	$foot.html('');
 	question1();									// asks the first question
 });
 

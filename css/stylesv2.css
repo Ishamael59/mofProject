@@ -4,6 +4,7 @@
 * {
 	box-sizing:border-box;    /*This makes the page easier to scale because it combines the padding and margin into the base value*/
 }
+
 .wrapper {
 	display:flex;			/*parent container for flexbox layout*/
 	line-height:1.1;		
@@ -11,6 +12,7 @@
 	text-align:center;
 	min-height:100vh;
 	background:#026cb6;
+	font-family:arial;
 }
 .header {
 	background-color:#026cb6;
